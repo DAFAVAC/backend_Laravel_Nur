@@ -14,9 +14,7 @@ class TestController extends Controller
      */
     public function index()
     {
-        $task = Test::all();
-
-        return UserController;
+        return $task = Test::all();
     }
 
     /**
@@ -37,8 +35,8 @@ class TestController extends Controller
      */
     public function store(Request $request)
     {
-        $user = Test::Create($request->all());
-
+        $user = Test::create($request->all());
+  
         return $user;
     }
 

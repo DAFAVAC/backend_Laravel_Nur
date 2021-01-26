@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Test extends Model
 {
-    public $fillable = ['nombre','latitude','lonitude'] ;
+    public $fillable = ['name','latitude','longitude'] ;
+  
 }
