@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get("test","TestController@index");
 Route::post("testPost","TestController@store");
+
+
+
+Route::get("user","UserController@index");
+Route::post("userC","UserController@store");
