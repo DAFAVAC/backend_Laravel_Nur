@@ -17,9 +17,10 @@ class CreateUbicationsTable extends Migration
             $table->id();
             $table->string('longitude');
             $table->string('latitude');
+            $table->biginteger('user_id')->nullable();
             $table->timestamps();
                 
-            $table->foreign('id')->references('id')->on('users')
+            $table->foreign('user_id')->references('id')->on('users')
             ->onDelete('cascade')
             ->onUpdate('cascade');
         });
